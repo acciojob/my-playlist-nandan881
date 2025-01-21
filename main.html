@@ -4,11 +4,78 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		body {
+			background-color: rgb(204, 204, 204);
+		}
+
+		#yellow {
+			background-color: yellow;
+			border: 1px solid green;
+		}
+
+		#red {
+			background-color: red;
+			border: 1px solid black;
+		}
+
+		#green {
+			background-color: green;
+			border: 1px solid yellow;
+		}
+
+		.player_one, .player_two {
+			background-color: rgb(255, 255, 255);
+			padding: 10px;
+			border-radius: 10px;
+		}
+
+		ul {
+			list-style-type: none;
+		}
+
+		a {
+			text-decoration-line: none;
+		}
+
+		h1, h2 {
+			text-align: center;
+		}
+	</style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+	<!-- Headings -->
+	<h1>My Playlist</h1>
+	<h2>Now Playing...</h2>
+	<h2>MP3 Songs</h2>
+
+	<!-- Songs Playlist -->
+	<ul>
+		<li><a href="https://www.example.com/song1" target="_blank">Song 1</a></li>
+		<li><a href="https://www.example.com/song2" target="_blank">Song 2</a></li>
+		<li><a href="https://www.example.com/song3" target="_blank">Song 3</a></li>
+		<li><a href="https://www.example.com/song4" target="_blank">Song 4</a></li>
+		<li><a href="https://www.example.com/song5" target="_blank">Song 5</a></li>
+	</ul>
+
+	<!-- Video Player -->
+	<div class="player_one">
+		<video controls>
+			<source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+	</div>
+
+	<!-- Audio Player -->
+	<div class="player_two">
+		<audio controls>
+			<source src="https://www.pagalworld.com.se/files/download/id/64630" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+	</div>
+
+	<script type="text/javascript" src="./script.js">
 </script>
 
 </body>
